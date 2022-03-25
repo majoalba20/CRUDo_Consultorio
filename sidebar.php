@@ -5,22 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
     <style>
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body{
             min-height: 100vh;
         }
-
         .side{
             margin-left: -300px;
         }
-
         .navbar{
             width: 250px;
             height: 100vh;
@@ -28,16 +24,28 @@
             background-color: #49b675;
             transition: 0.4s;
         }
-
         .my-cont{
             margin-left: 0px;
         }
-
         section{
             margin-left: 250px;
         }
-    </style>
 
+        @media screen and (max-width: 460px) {
+            .navbar{
+                width: 100px;
+            }
+
+            .navbar > h2, p, hr{
+                opacity: 0;
+            }
+
+            nav > svg{
+                width: 100%;
+            }
+        }
+
+    </style>
 </head>
 <body>
     <nav class='navbar navbar-expand d-flex flex-column align-item-start' 
@@ -83,5 +91,3 @@
 </script>
 </body>
 </html>
-
-
