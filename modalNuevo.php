@@ -29,7 +29,7 @@
                                 </div>
                                 <div class="colmd-4">
                                     <label for="fecha" class="form-label">Fecha</label>
-                                    <input type="datetime-local" name="fecha" id="fecha" class="form-control" required autofocus>
+                                    <input type="text" name="fecha" id="fecha" class="form-control" placeholder='DD-MM-YYYY HH:MM XM' required autofocus>
                                 </div>
                                 <div class="modal-footer">
                                     <button class="btn btn-success" name='send_' value='send_' type="submit">Guardar</button>

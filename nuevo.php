@@ -11,7 +11,9 @@ if($_POST['send_']){
 }
 
 echo "<script type='text/javascript'>
-        window.location='usuarios.php';
+        window.location='index.php';
     </script>";
+
+header("Location:index.php?e=1");
 
 ?>

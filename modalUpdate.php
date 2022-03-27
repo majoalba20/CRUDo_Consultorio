@@ -30,7 +30,7 @@
                                 </div>
                                 <div class="colmd-4">
                                     <label for="fecha" class="form-label">Fecha</label>
-                                    <input type="datetime-local" name="fecha" id="fecha" class="form-control" value=<?php echo $fila['fecha'] ?> required autofocus>
+                                    <input type="text" name="fecha" id="fecha" class="form-control" value=<?php echo $fila['fecha'] ?> required autofocus>
                                 </div>
                                 <div class="modal-footer">
                                     <button class="btn btn-warning" name='sendEdit' value='sendEdit' type="submit">Editar</button>

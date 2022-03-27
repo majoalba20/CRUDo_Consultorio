@@ -12,7 +12,9 @@ if($_POST['sendEdit']){
 }
 
 echo "<script type='text/javascript'>
-        window.location='usuarios.php';
+        window.location='index.php';
     </script>";
+
+header("Location:index.php?ea=1");
 
 ?>

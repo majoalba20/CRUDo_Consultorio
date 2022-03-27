@@ -10,7 +10,9 @@ if($_POST['sendDelete']){
 }
 
 echo "<script type='text/javascript'>
-        window.location='usuarios.php';
+        window.location='index.php';
     </script>";
+
+header("Location:index.php?de=1");
 
 ?>
