@@ -29,6 +29,26 @@ class Turno extends Database{
         return $resultado;
     }
 
+    function actualizarCita(int $id,string $nombre,string $tema,string $fecha){
+        $this->nombre = $nombre;
+        $this->tema = $tema;
+        $this->fecha = $fecha;
+
+        $sql = "UPDATE citas SET nombre=?, tema=?, fecha=? WHERE id=$id";
+        $update = $this->conexion->prepare($sql);
+        $arrData = array($this->nombre,$this->tema,$this->fecha);
+        $resExecute = $update->execute($arrData);
+        return $resExecute;
+    }
+
+    function eliminarCita($id){
+        $sql = "DELETE FROM citas WHERE id=?";
+        $delete = $this->conexion->prepare($sql);
+        $arrData = array($id);
+        $resDelete = $delete->execute($arrData);
+        return $resDelete;
+    }
+
 }
 
 ?>
